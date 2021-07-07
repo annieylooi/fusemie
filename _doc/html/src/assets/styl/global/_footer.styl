@@ -1,0 +1,60 @@
+footer
+	display block
+	text-align center
+	margin-top -30%
+	+from-width($desktop_breakpoint)
+		margin-top -8%
+		
+	h2,p
+		color $white
+		
+	a
+		color $white
+		font-family 'notosans-regular',sans-serif!important
+		
+	.hr
+		margin 60px 0 20px
+		
+	.vector_top
+		position relative
+		img
+			width 100%
+		
+	.container
+		background $blue
+		padding-bottom 20px
+		position relative
+		p
+			text-align center
+			+from-width($tablet_breakpoint)				
+				text-align right
+		
+	.footer_wrapper
+		display flex
+		justify-content space-between
+		flex-direction column
+		+from-width($tablet_breakpoint)
+			flex-direction row
+		._list
+			h2,p
+				text-align left
+				
+			h2
+				margin-bottom 15px
+				
+			ul
+				list-style none
+				padding 0
+				margin 0
+				color $white
+				display flex
+				flex-direction row
+				li
+					margin-right 15px
+					max-width 15%
+					+from-width($tablet_breakpoint)
+						max-width 50px
+					&:last-child
+						margin-right 0
+		
+		

@@ -1,0 +1,165 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i')
+
+/* Import / Vendor */
+@import '../css/vendor/*.css'
+
+normalize-css()
+
+/* Disable vendor prefixing for nib() */
+flex-version = flex
+support-for-ie = false
+vendor-prefixes = official
+
+/* Import Helper Class (S-grid - stylusgrid.com) */
+// @import 'helper/s-grid-settings.styl'
+// @import 'helper/s-grid-functions.styl'
+// @import 'helper/s-grid-classes.styl'
+
+/* Variable/Settings */
+@import 'global/_variables.styl'
+@import 'global/*.styl'
+
+/* components */
+@import 'components/*.styl'
+
+/* Modules */
+@import 'modules/*.styl'
+
+
+::-webkit-input-placeholder
+	color #bcbec0
+	font-weight 300
+	font-size 16px
+	font-family 'notosans-regular'
+	letter-spacing 0.4px
+::-moz-placeholder
+	color #bcbec0
+	font-weight 300
+	font-size 16px
+	font-family 'notosans-regular'
+	letter-spacing 0.4px
+:-ms-input-placeholder
+	color #bcbec0
+	font-weight 300
+	font-size 16px
+	font-family 'notosans-regular'
+	letter-spacing 0.4px
+:-moz-placeholder
+	color #bcbec0
+	font-weight 300
+	font-size 16px
+	font-family 'notosans-regular'
+	letter-spacing 0.4px
+
+img
+	max-width 100%
+	display block
+
+body
+	font-size 14px
+	font-family 'notosans-regular', sans-serif
+	color $black
+	background $white
+	
+
+h2
+	font-family 'notosans-bold',sans-serif!important
+	font-size 20px
+	line-height 26px
+	color $black
+	font-weight normal
+	+from-width($desktop_breakpoint)
+		font-size 24px
+		line-height 30px
+		
+
+h3
+	font-family 'notosans-bold',sans-serif
+	margin 0
+	font-size 26px
+	line-height 34px
+	color $blue
+	+from-width($desktop_breakpoint)
+		font-size 40px
+		line-height 48px
+
+	
+p
+	color $blue
+	font-family 'notosans-regular',sans-serif!important
+	rem-calc(14px)
+	line-height 22px
+	font-weight 400
+	
+	&.bold, strong
+		font-family 'notosans-bold',sans-serif!important	
+
+a
+	text-decoration none
+	outline none !important
+	color $gold
+	transition 0.3s ease-in-out
+	font-family 'notosans-bold',sans-serif
+	&:hover, &:active, &:visited, &:focus
+		text-decoration none
+	&.links
+		&:hover
+			background transparent!important
+			color $gold!important
+			&:after
+				border-left-color $gold!important
+		
+	&.primary_btn
+		color $gold
+		font-size 16px
+		display inline-block
+		font-family 'notosans-regular',sans-serif
+			
+main
+	overflow hidden
+	min-height 550px
+		
+.content-wrapper
+	center(1200px, pad:20px)
+	
+.mob-show
+	display block
+	+from-width($desktop_breakpoint)
+		display none
+.mob-hide
+	display none
+	+from-width($desktop_breakpoint)
+		display block
+
+.row
+	display flex
+	flex-direction column
+	+from-width($desktop_breakpoint)
+		flex-direction row
+		
+.hr
+	width 100%
+	background $white
+	height 1px
+	display block
+	
+.text-center
+	text-align center
+
+.text-right
+	text-align right
+	
+.text-left
+	text-align left
+		
+.title
+	p
+		padding 15px 0
+		
+	a
+		margin-top 10px
+		
+	
+		
+		
